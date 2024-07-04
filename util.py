@@ -117,6 +117,7 @@ def read_license_plate(license_plate_crop):
     """
 
     detections = reader.readtext(license_plate_crop)
+    print(detections)
 
     for detection in detections:
         bbox, text, score = detection
